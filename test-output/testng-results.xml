@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16920" started-at="2020-02-12T04:56:42Z" finished-at="2020-02-12T04:56:59Z">
+  <suite name="Default suite" duration-ms="30008" started-at="2020-02-13T04:46:14Z" finished-at="2020-02-13T04:46:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16920" started-at="2020-02-12T04:56:42Z" finished-at="2020-02-12T04:56:59Z">
-      <class name="com.training.sanity.tests.LoginTests">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTests@6f7fd0e6]" name="setUpBeforeClass" is-config="true" duration-ms="15" started-at="2020-02-12T04:56:42Z" finished-at="2020-02-12T04:56:42Z">
+    <test name="Default test" duration-ms="30008" started-at="2020-02-13T04:46:14Z" finished-at="2020-02-13T04:46:44Z">
+      <class name="com.training.sanity.tests.AdTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.AdTest@6f7fd0e6]" name="setUpBeforeClass" is-config="true" duration-ms="16" started-at="2020-02-13T04:46:14Z" finished-at="2020-02-13T04:46:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@6f7fd0e6]" name="setUp" is-config="true" duration-ms="12151" started-at="2020-02-12T04:56:42Z" finished-at="2020-02-12T04:56:55Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.AdTest@6f7fd0e6]" name="setUp" is-config="true" duration-ms="12457" started-at="2020-02-13T04:46:14Z" finished-at="2020-02-13T04:46:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.LoginTests@6f7fd0e6]" name="validLoginTest" duration-ms="2791" started-at="2020-02-12T04:56:55Z" finished-at="2020-02-12T04:56:57Z">
+        <test-method status="PASS" signature="AdsvalidationTest()[pri:0, instance:com.training.sanity.tests.AdTest@6f7fd0e6]" name="AdsvalidationTest" duration-ms="4585" started-at="2020-02-13T04:46:27Z" finished-at="2020-02-13T04:46:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="1927" started-at="2020-02-12T04:56:57Z" finished-at="2020-02-12T04:56:59Z">
+        </test-method> <!-- AdsvalidationTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.AdTest@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-02-13T04:46:32Z" finished-at="2020-02-13T04:46:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.LoginTests -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.AdTest@6f7fd0e6]" name="setUp" is-config="true" duration-ms="10365" started-at="2020-02-13T04:46:32Z" finished-at="2020-02-13T04:46:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="memberLoginAds()[pri:1, instance:com.training.sanity.tests.AdTest@6f7fd0e6]" name="memberLoginAds" duration-ms="2545" started-at="2020-02-13T04:46:42Z" finished-at="2020-02-13T04:46:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- memberLoginAds -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.AdTest@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-13T04:46:44Z" finished-at="2020-02-13T04:46:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.sanity.tests.AdTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
