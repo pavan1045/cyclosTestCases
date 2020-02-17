@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class LoginPOM {
 	private WebDriver driver; 
@@ -98,6 +99,16 @@ public class LoginPOM {
 	
 	public void viewDetails(){
 		this.view.click();
+	}
+	
+	@FindBy(xpath="//*[(contains(text(),'Loan details'))]")
+	private WebElement validPage;
+	
+	public void verifyByAssert(){
+		String exp = "Loan details";
+		String act = validPage.getText();
+		Assert.assertEquals(exp, act);
+		System.out.println("Loan Details Displayed");
 	}
 	
 }

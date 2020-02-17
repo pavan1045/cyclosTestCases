@@ -4,16 +4,16 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.openqa.selenium.Alert;
+//import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.training.generics.ScreenShot;
+//import com.training.generics.ScreenShot;
 import com.training.pom.AdsPOM;
-import com.training.pom.LoginPOM;
+//import com.training.pom.LoginPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
@@ -21,10 +21,10 @@ public class AdTest {
 	
 	private WebDriver driver;
 	private String baseUrl;
-	private LoginPOM loginPOM;
+	//private LoginPOM loginPOM;
 	private AdsPOM advertisement;
 	private static Properties properties;
-	private ScreenShot screenShot;
+	//private ScreenShot screenShot;
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
@@ -36,10 +36,10 @@ public class AdTest {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		loginPOM = new LoginPOM(driver);
+		//loginPOM = new LoginPOM(driver);
 		advertisement = new AdsPOM(driver);
 		baseUrl = properties.getProperty("baseURL");
-		screenShot = new ScreenShot(driver); 
+		//screenShot = new ScreenShot(driver); 
 		// open the browser 
 		driver.get(baseUrl);
 	}

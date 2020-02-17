@@ -2,40 +2,74 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30008" started-at="2020-02-13T04:46:14Z" finished-at="2020-02-13T04:46:44Z">
+  <suite name="Default suite" duration-ms="43294" started-at="2020-02-17T03:02:08Z" finished-at="2020-02-17T03:02:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30008" started-at="2020-02-13T04:46:14Z" finished-at="2020-02-13T04:46:44Z">
-      <class name="com.training.sanity.tests.AdTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.AdTest@6f7fd0e6]" name="setUpBeforeClass" is-config="true" duration-ms="16" started-at="2020-02-13T04:46:14Z" finished-at="2020-02-13T04:46:14Z">
+    <test name="Default test" duration-ms="43294" started-at="2020-02-17T03:02:08Z" finished-at="2020-02-17T03:02:51Z">
+      <class name="com.training.sanity.tests.TestMessages">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestMessages@47c62251]" name="setUpBeforeClass" is-config="true" duration-ms="16" started-at="2020-02-17T03:02:08Z" finished-at="2020-02-17T03:02:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.AdTest@6f7fd0e6]" name="setUp" is-config="true" duration-ms="12457" started-at="2020-02-13T04:46:14Z" finished-at="2020-02-13T04:46:27Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestMessages@47c62251]" name="setUp" is-config="true" duration-ms="12112" started-at="2020-02-17T03:02:09Z" finished-at="2020-02-17T03:02:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="AdsvalidationTest()[pri:0, instance:com.training.sanity.tests.AdTest@6f7fd0e6]" name="AdsvalidationTest" duration-ms="4585" started-at="2020-02-13T04:46:27Z" finished-at="2020-02-13T04:46:32Z">
+        <test-method status="PASS" signature="validLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.TestMessages@47c62251]" name="validLoginTest" duration-ms="10173" started-at="2020-02-17T03:02:21Z" data-provider="db-inputs" finished-at="2020-02-17T03:02:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bodagala]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Loan Repayment]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Loan Repayment Details]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AdsvalidationTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.AdTest@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-02-13T04:46:32Z" finished-at="2020-02-13T04:46:32Z">
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestMessages@47c62251]" name="tearDown" is-config="true" duration-ms="1861" started-at="2020-02-17T03:02:31Z" finished-at="2020-02-17T03:02:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.AdTest@6f7fd0e6]" name="setUp" is-config="true" duration-ms="10365" started-at="2020-02-13T04:46:32Z" finished-at="2020-02-13T04:46:42Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestMessages@47c62251]" name="setUp" is-config="true" duration-ms="10140" started-at="2020-02-17T03:02:33Z" finished-at="2020-02-17T03:02:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="memberLoginAds()[pri:1, instance:com.training.sanity.tests.AdTest@6f7fd0e6]" name="memberLoginAds" duration-ms="2545" started-at="2020-02-13T04:46:42Z" finished-at="2020-02-13T04:46:44Z">
+        <test-method status="PASS" signature="validLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.TestMessages@47c62251]" name="validLoginTest" duration-ms="6796" started-at="2020-02-17T03:02:43Z" data-provider="db-inputs" finished-at="2020-02-17T03:02:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Loan Repayment]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Loan Repayment Details]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- memberLoginAds -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.AdTest@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-13T04:46:44Z" finished-at="2020-02-13T04:46:44Z">
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestMessages@47c62251]" name="tearDown" is-config="true" duration-ms="1839" started-at="2020-02-17T03:02:50Z" finished-at="2020-02-17T03:02:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.AdTest -->
+      </class> <!-- com.training.sanity.tests.TestMessages -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
