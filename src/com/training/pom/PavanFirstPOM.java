@@ -110,17 +110,4 @@ public class PavanFirstPOM {
 		Assert.assertEquals(exp, act);
 		System.out.println("Loan Details Displayed");
 	}
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-

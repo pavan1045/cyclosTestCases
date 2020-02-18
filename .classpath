@@ -19,5 +19,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="E:/Selenium Training/Selenium jars/httpclient-4.5.6.jar"/>
+	<classpathentry kind="lib" path="E:/Selenium Training/Selenium jars/jira-client-0.5.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
