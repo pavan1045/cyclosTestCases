@@ -6,10 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class LoginPOM {
+public class PavanFirstPOM {
 	private WebDriver driver; 
 	
-	public LoginPOM(WebDriver driver) {
+	public PavanFirstPOM(WebDriver driver) {
 		this.driver = driver; 
 		PageFactory.initElements(driver, this);
 	}
