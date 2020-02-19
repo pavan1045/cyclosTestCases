@@ -60,7 +60,7 @@ public class VidyaMediumTest {
 	@AfterMethod
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
-		//driver.quit();
+		driver.quit();
 	}
 	@Test(priority=0)
 	public void validLoginTest() {
@@ -80,7 +80,7 @@ public class VidyaMediumTest {
 
 		JavascriptExecutor j=(JavascriptExecutor)driver;
 		j.executeScript("window.scrollTo(-500,document.body.scrollHeight)");
-		MemLoginPOM.memberName("Vidya");
+		MemLoginPOM.memberName("vidya");
 		MemLoginPOM.fullName("seerla");
 		}
 		
@@ -108,7 +108,7 @@ public class VidyaMediumTest {
 		@Test(priority=3)
 		public void memlogin()
 		{
-		MemLogin1POM.userName("Vidya");
+		MemLogin1POM.userName("vidya");
 		MemLogin1POM.pwd1();
 		MemLogin1POM.pwd2();
 

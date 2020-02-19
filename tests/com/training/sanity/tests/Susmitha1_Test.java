@@ -20,7 +20,7 @@ import com.training.pom.Susmitha_TestPOm;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class Susmitha_Test1 {
+public class Susmitha1_Test {
 	private WebDriver driver;
 	private String baseUrl;
 	private Susmitha_TestPOm Susmitha_TestPOm;
@@ -45,7 +45,7 @@ public class Susmitha_Test1 {
 	@AfterMethod
 	public void tearDown() throws Exception {
 		driver.manage().timeouts().implicitlyWait(1000,TimeUnit.SECONDS);
-		driver.quit();
+		//driver.quit();
 	}
 	
 	@Test

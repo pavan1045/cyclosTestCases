@@ -31,12 +31,32 @@ public class LoginDataProviders {
 		return result;
 	}
 	
-	@DataProvider(name = "excel-inputs")
+	@DataProvider(name = "subject")
 	public Object[][] getExcelData(){
-		String fileName ="C:/Users/Naveen/Desktop/Testing.xlsx"; 
-		return new ApachePOIExcelRead().getExcelContent(fileName); 
+		String fileName ="E:\\Jira\\TestData.xlsx";
+		String sheetname="Subject";
+		return new ApachePOIExcelRead().getExcelContent(fileName,sheetname); 
 	}
 	
+	@DataProvider(name = "messages")
+	public Object[][] getExcelData1(){
+		String fileName ="E:\\Jira\\TestData.xlsx";
+		String sheetname="Messages";
+		return new ApachePOIExcelRead().getExcelContent(fileName,sheetname); 
+	}
+	
+	@DataProvider(name = "valid_register")
+	public Object[][] getExcelData2(){
+		String fileName ="E:\\Jira\\TestData.xlsx";
+		String sheetname="Valid_Register";
+		return new ApachePOIExcelRead().getExcelContent(fileName,sheetname); 
+	}
+	@DataProvider(name = "register")
+	public Object[][] getExcelData3(){
+		String fileName ="E:\\Jira\\TestData.xlsx";
+		String sheetname="Register";
+		return new ApachePOIExcelRead().getExcelContent(fileName,sheetname); 
+	}
 	@DataProvider(name = "xls-inputs")
 	public Object[][] getXLSData(){
 		// ensure you will have the title as first line in the file 

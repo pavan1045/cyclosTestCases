@@ -5,13 +5,17 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.training.generics.ScreenShot;
 import com.training.pom.PavanFirstPOM;
+import com.training.pom.RojaTestPOM;
+import com.training.utility.Driver;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
@@ -19,23 +23,23 @@ public class PavanFirstTests {
 
 	private WebDriver driver;
 	private String baseUrl;
-	private PavanFirstPOM loginPOM;
+	private PavanFirstPOM pavanFirstPOM;
 	private static Properties properties;
-	private ScreenShot screenShot;
-
-	@BeforeClass
+	//private ScreenShot screenShot;
+	@BeforeTest
 	public static void setUpBeforeClass() throws IOException {
 		properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
 		properties.load(inStream);
 	}
 
-	@BeforeMethod
+	
+	@BeforeClass
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		loginPOM = new PavanFirstPOM(driver); 
+		pavanFirstPOM = new PavanFirstPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
-		screenShot = new ScreenShot(driver); 
+		//screenShot = new ScreenShot(driver); 
 		// open the browser 
 		driver.get(baseUrl);
 	}
@@ -43,24 +47,28 @@ public class PavanFirstTests {
 	@AfterMethod
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
-		driver.quit();
+		//driver.quit();
 	}
 	@Test
 	public void validLoginTest() {
-		loginPOM.sendLoginName("admin");
+		pavanFirstPOM.sendLoginName("admin");
 		//loginPOM.sendPassword("1234");
-		loginPOM.sendClick1();
-		loginPOM.sendClick2();
-		loginPOM.sendClick3();
-		loginPOM.sendClick4();
-		loginPOM.clickSubmit(); 
+		pavanFirstPOM.sendClick1();
+		pavanFirstPOM.sendClick2();
+		pavanFirstPOM.sendClick3();
+		pavanFirstPOM.sendClick4();
+		pavanFirstPOM.clickSubmit(); 
 		//screenShot.captureScreenShot("First");
-		loginPOM.Accounts();
-		loginPOM.ManageLone();
-		loginPOM.memberLogin();
-		loginPOM.clickSubmit1();
-		loginPOM.viewDetails();
-		loginPOM.verifyByAssert();
+		pavanFirstPOM.Accounts();
+		pavanFirstPOM.ManageLone();
+		pavanFirstPOM.memberLogin();
+		pavanFirstPOM.clickSubmit1();
+		pavanFirstPOM.viewDetails();
+		String act=pavanFirstPOM.verifyByAssert();
+		String exp = "Loan details";
+		Assert.assertEquals(exp, act);
+		System.out.println("Loan Details Displayed");
+		
 		
 	}
 	

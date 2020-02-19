@@ -13,7 +13,7 @@ private WebDriver driver;
 		PageFactory.initElements(driver, this);
 	}
    
-	@FindBy(xpath="//input[@linkurl='grantLoan?memberId=10']")
+	@FindBy(xpath="//input[@linkurl='grantLoan?memberId=11']")
 	private WebElement submit;
 	
 	@FindBy(xpath="//input[@name='loan(amount)']")
@@ -28,7 +28,7 @@ private WebDriver driver;
 	@FindBy(xpath="//input[@value='Submit']")
 	private WebElement submit2;
 	
-	@FindBy(xpath="//input[@linkurl='searchLoans?memberId=10']")
+	@FindBy(xpath="//input[@linkurl='searchLoans?memberId=11']")
 	private WebElement submit3;
 	
 	@FindBy(xpath="//*[@id='menu15']/span[2]")

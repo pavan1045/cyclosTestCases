@@ -64,7 +64,7 @@ public class RojaTestMess {
 		
 	}
 	
-	@Test (priority=1, dataProvider="cyclos",dataProviderClass=LoginDataProviders.class)
+	@Test (priority=1, dataProvider="messages",dataProviderClass=LoginDataProviders.class)
 public void memInput( String mem_login,String Member_Login,String Subject,String Body) throws InterruptedException{
 		testmesadminPOM.memLogin1(mem_login);
 		testmesadminPOM.Messages();

@@ -51,8 +51,10 @@ public class SatyaMemberTest {
 	
 	@AfterMethod
 	public void tearDown() throws Exception {
-		Thread.sleep(1000);
-		driver.quit();
+		
+		
+		//Thread.sleep(1000);
+		//driver.quit();
 	}
 	@Test
 	public void validLoginTest1() throws InterruptedException {

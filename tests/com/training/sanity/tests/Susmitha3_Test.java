@@ -17,7 +17,7 @@ import com.training.pom.Susmitha_Test2POM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class Susmitha_Test3 {
+public class Susmitha3_Test {
 	private WebDriver driver;
 	private String baseUrl;
 	private Susmitha_Test2POM Susmitha_Test2POM;
@@ -49,7 +49,7 @@ public class Susmitha_Test3 {
 		Susmitha_Test2POM.clickMenuText();
 	}
 
-	@Test(priority=2, dataProvider="Cyclos",dataProviderClass=LoginDataProviders.class)
+	@Test(priority=2, dataProvider="subject",dataProviderClass=LoginDataProviders.class)
 	public void validStep_3(String Member_Login,String Subject,String Body) throws InterruptedException{
 
 

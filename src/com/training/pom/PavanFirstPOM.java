@@ -104,10 +104,9 @@ public class PavanFirstPOM {
 	@FindBy(xpath="//*[(contains(text(),'Loan details'))]")
 	private WebElement validPage;
 	
-	public void verifyByAssert(){
-		String exp = "Loan details";
+	public String verifyByAssert(){
+		
 		String act = validPage.getText();
-		Assert.assertEquals(exp, act);
-		System.out.println("Loan Details Displayed");
+		return act;
 	}
 }

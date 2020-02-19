@@ -43,10 +43,10 @@ public class SaiStatisticalTests {
 	@AfterMethod
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
-		//driver.quit();
+		driver.quit();
 	}
-	@Test(dataProvider="db-inputs",dataProviderClass=LoginDataProviders.class)
-	public void validLoginTest(String login,String password) {
+	@Test
+	public void validLoginTest() {
 		TestPOM.sendUserName("admin");
 		TestPOM.pwd1();
 		TestPOM.pwd2();

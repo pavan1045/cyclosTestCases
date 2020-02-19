@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.training.dataproviders.LoginDataProviders;
@@ -28,7 +29,7 @@ public class TestMessages {
 	private static Properties properties;
 	private ScreenShot screenShot;
 
-	@BeforeClass
+	@BeforeTest
 	public static void setUpBeforeClass() throws IOException {
 		properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
@@ -74,6 +75,7 @@ public class TestMessages {
 		msgPOM.logoutBtn2();
 		msgPOM.alertHandle1();
 		//screenShot.captureScreenShot("First");
+		
 	}
 	
 }

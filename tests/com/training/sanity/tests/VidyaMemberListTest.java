@@ -34,7 +34,7 @@ public class VidyaMemberListTest {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
 		TestPom = new VidyaTestPom(driver); 
 		baseUrl = properties.getProperty("baseURL");
-		screenShot = new ScreenShot(driver); 
+		//screenShot = new ScreenShot(driver); 
 		// open the browser 
 		driver.get(baseUrl);
 	}
@@ -42,7 +42,7 @@ public class VidyaMemberListTest {
 	@AfterMethod
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
-		driver.quit();
+		//driver.quit();
 	}
 	@Test (priority=0)
 	public void validLoginTest() {
